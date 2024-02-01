@@ -315,11 +315,11 @@ class VideoPlayerController(
 
     private fun configureVRSettings(): VRSettings {
         val vrSettings = VRSettings()
-        vrSettings.isFlingEnabled = true
-        vrSettings.isVrModeEnabled = false
-        vrSettings.interactionMode = VRInteractionMode.MotionWithTouch
+        vrSettings.isFlingEnabled = false
+        vrSettings.isVrModeEnabled = true
+        vrSettings.interactionMode = VRInteractionMode.CardboardMotion
 
-        vrSettings.isZoomWithPinchEnabled = true
+        vrSettings.isZoomWithPinchEnabled = false
         return vrSettings
     }
 
